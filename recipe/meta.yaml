@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -20,18 +20,18 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps >=0.0.8
-    - fps-auth
+    - fps >=0.0.8,<1.0.0
+    - fps-auth >=0.0.30,<1.0.0
 
 test:
   imports:
     - fps_login
 
 about:
-  home: https://github.com/jupyter-server/jupyverse/plugins/login
+  home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
   summary: An FPS plugin for the login API
   keywords: jupyter, server, fastapi, pluggy, plugins
-  dev_url: https://github.com/jupyter-server/jupyverse/plugins/login
+  dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
   license_file: COPYING.md
   license: BSD-3-Clause
   license_family: BSD

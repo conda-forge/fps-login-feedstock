@@ -1,7 +1,7 @@
 About fps-login
 ===============
 
-Home: https://github.com/jupyter-server/jupyverse/plugins/login
+Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-login-feeds
 
 Summary: An FPS plugin for the login API
 
-Development: https://github.com/jupyter-server/jupyverse/plugins/login
+Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
 
 Current build status
 ====================
