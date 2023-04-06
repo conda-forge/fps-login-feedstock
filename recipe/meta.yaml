@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - fps >=0.0.8,<1.0.0
+    - jupyverse-api >=0.1.2,<1
 
 test:
   imports:
@@ -30,7 +30,7 @@ test:
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
   summary: An FPS plugin for the login API
-  keywords: jupyter, server, fastapi, pluggy, plugins
+  keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
   license_file: COPYING.md
   license: BSD-3-Clause
