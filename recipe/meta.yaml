@@ -1,5 +1,5 @@
 {% set name = "fps-login" %}
-{% set version = "0.0.50" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_login-{{ version }}.tar.gz
-  sha256: a814a9396ec6250ba3175570704ebeece9f34a6c3097be86f21b950cce86acd8
+  sha256: 9004b538515172befcc2c5bfa50ce41cff301ade41bc844bbc912f39b2886022
 
 build:
   noarch: python
