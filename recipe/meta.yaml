@@ -1,5 +1,5 @@
 {% set name = "fps-login" %}
-{% set version = "0.0.50" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_login-{{ version }}.tar.gz
-  sha256: a814a9396ec6250ba3175570704ebeece9f34a6c3097be86f21b950cce86acd8
+  sha256: 9004b538515172befcc2c5bfa50ce41cff301ade41bc844bbc912f39b2886022
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - fps >=0.0.8,<1.0.0
+    - jupyverse-api >=0.1.2,<1
 
 test:
   imports:
@@ -30,7 +30,7 @@ test:
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
   summary: An FPS plugin for the login API
-  keywords: jupyter, server, fastapi, pluggy, plugins
+  keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/login
   license_file: COPYING.md
   license: BSD-3-Clause
