@@ -1,5 +1,5 @@
 {% set name = "fps-login" %}
-{% set version = "0.6.4" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_login-{{ version }}.tar.gz
-  sha256: 6f6b12a18df534718ad7310b9bfbe0467b13568930ce783c51f7cb5aab87ba5d
+  sha256: 9d42cd62b31202aa95abdd70abfa19ab6274bae8abbce05280c76838d7936e66
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.1.4,<1
+    - jupyverse-api >=0.7.0,<1
 
 test:
   requires:
