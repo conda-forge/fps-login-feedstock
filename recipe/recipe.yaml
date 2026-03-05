@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.7"
+  version: "0.10.0"
 
 package:
   name: fps-login
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-login/fps_login-${{ version }}.tar.gz
-    sha256: a1ffc4c292932d8394118cd4efca650fad398824e924c7fc3d6b1a0495693ebe
+    sha256: cc3795ffbf3f239cef9c828f300b1b131dd66d86b7120ed95749b46da8edcf34
 
 build:
   noarch: python
